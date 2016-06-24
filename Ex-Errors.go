@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 )
-// COULD NOT figure out how to make this function -> so copied it from the URL - https://gist.github.com/zyxar/2317744 - SO that I could complete this exercise.
+// COULD NOT figure out how to make Sqrt function -> so copied it from the URL - https://gist.github.com/zyxar/2317744 - SO that I could complete this exercise(errors).
 
 type ErrNegativeSqrt float64
 func (e ErrNegativeSqrt) Error() string {
