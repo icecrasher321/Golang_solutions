@@ -1,5 +1,5 @@
 package main
-
+//URL -> https://tour.golang.org/concurrency/7
 import ("golang.org/x/tour/tree"
        "fmt"
 		 )
@@ -10,7 +10,7 @@ func Walk(t *tree.Tree, ch chan []int) {
 	cur_el := t.Left.Left.Left.Value
 	var elements []int
 	for i := 0; i < 10; i++ {
-		element := cur_el * i
+		element := cur_el * i                    // Taking advantage of the tree.New functionality
 		elements = append(elements, element)
 	}
 	ch <- elements

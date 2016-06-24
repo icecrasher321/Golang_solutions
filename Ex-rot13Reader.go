@@ -1,5 +1,5 @@
 package main
-
+// URL -> https://tour.golang.org/methods/23
 import (
 	"io"
 	"os"
@@ -23,7 +23,12 @@ func (r1 rot13Reader) Read(b []byte) (i int, err error) {
 	return i, err
 }
 
-// 78 -> N, 91 -> Z, 110 -> n, 122 -> z, 65 -> A, 97 -> a
+/* 78 -> N,
+   91 -> Z,
+	 65 -> A,
+	 110 -> n,
+	 122 -> z,
+	  97 -> a */
 
 func main() {
 	s := strings.NewReader("Lbh penpxrq gur pbqr!\n")
